@@ -4,40 +4,203 @@
   <meta charset="UTF-8">
   <title>Mohammad Shahid | Computational Modelling Engineer</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <style>
     body {
       font-family: Arial, sans-serif;
-      line-height: 1.6;
       margin: 0;
+      line-height: 1.6;
       color: #222;
-      background: #f7f7f7;
+      background: #f4f6f8;
     }
 
     header {
       background: #102033;
       color: white;
-      padding: 50px 20px;
       text-align: center;
+      padding: 50px 20px;
     }
 
     header h1 {
       margin: 0;
-      font-size: 36px;
+      font-size: 38px;
     }
 
     header p {
-      margin: 10px 0;
       font-size: 18px;
+      margin: 10px 0;
+    }
+
+    .button {
+      display: inline-block;
+      margin: 8px;
+      padding: 10px 16px;
+      background: #1f5f99;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
     }
 
     .container {
       max-width: 1000px;
-      margin: auto;
-      padding: 30px 20px;
+      margin: 0 auto;
       background: white;
+      padding: 30px 25px;
     }
 
     h2 {
       color: #102033;
-      border-bottom: 2
+      border-bottom: 2px solid #102033;
+      padding-bottom: 6px;
+      margin-top: 35px;
+    }
+
+    .project {
+      background: #fafafa;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      padding: 15px;
+      margin: 15px 0;
+    }
+
+    .project h3 {
+      margin-top: 0;
+      color: #1f5f99;
+    }
+
+    footer {
+      background: #102033;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    a {
+      color: #1f5f99;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>Mohammad Shahid</h1>
+  <p>Computational Modelling Engineer</p>
+  <p>Heat Transfer & CFD | Compact / Reduced-Order Thermal Models | Numerical Software | Solver V&V</p>
+  <p>Den Haag, Netherlands</p>
+
+  <a class="button" href="PDFs/Mohammad_Shahid_CV.pdf">Download CV</a>
+  <a class="button" href="PDFs/Portfolio_MohammadShahid.pdf">Download Portfolio</a>
+  <a class="button" href="https://github.com/MechShahid">GitHub</a>
+  <a class="button" href="https://www.linkedin.com/in/mohammad-shahid-5ab944141">LinkedIn</a>
+</header>
+
+<div class="container">
+
+  <h2>About</h2>
+  <p>
+    I am a computational modelling engineer with experience in heat transfer,
+    CFD, thermo-fluid simulation, multiphysics modelling, compact thermal models,
+    and solver verification and validation. My work combines first-principles
+    analysis, high-fidelity simulation comparison, reduced-order modelling,
+    and scientific programming to support engineering design decisions.
+  </p>
+
+  <h2>Featured Engineering Portfolio</h2>
+
+  <div class="project">
+    <h3>Rapid Thermal Screening of 5G/6G Active Antenna Units</h3>
+    <p>
+      Developed a compact thermal resistance-network framework for front- and
+      rear-side natural heat dissipation in active antenna units. The model used
+      conduction, radiation, and natural-convection correlations and was validated
+      against 3D CST simulations.
+    </p>
+  </div>
+
+  <div class="project">
+    <h3>Forced-Convection Cooling Concept for Active Antenna Units</h3>
+    <p>
+      Built an analytical design framework for a front-side air-to-air heat-exchanger
+      concept using fin count, channel dimensions, airflow rate, outlet temperature,
+      and heat-rejection estimates.
+    </p>
+  </div>
+
+  <div class="project">
+    <h3>Reduced-Order Thermal Modelling for RF Via Structures</h3>
+    <p>
+      Developed analytical reduced-order thermal models for localized electro-thermal
+      heating in RF via structures and validated them against COMSOL finite-element
+      simulations.
+    </p>
+  </div>
+
+  <div class="project">
+    <h3>Sequential Electro-Thermal-Mechanical CST Workflow</h3>
+    <p>
+      Built and verified a CST workflow linking electromagnetic loss, thermal analysis,
+      structural deformation, and RF sensitivity for thermally loaded RF hardware.
+    </p>
+  </div>
+
+  <div class="project">
+    <h3>Verification and Validation of In-House Plasma-Flow Solver</h3>
+    <p>
+      Verified and validated the YAPS plasma-flow solver using benchmark cases including
+      Poiseuille flow, de Laval nozzle flow, laminar jets, and free-burning arc simulations.
+    </p>
+  </div>
+
+  <div class="project">
+    <h3>Unsteady Mixed-Convection CFD Around Oscillating Heated Cylinder</h3>
+    <p>
+      Adapted an in-house finite-difference Fortran solver for unsteady mixed-convection
+      heat-transfer simulations around a torsionally oscillating heated circular cylinder.
+    </p>
+  </div>
+
+  <h2>Numerical Software & GitHub Projects</h2>
+
+  <div class="project">
+    <h3>CUDA LBM Lid-Driven Cavity Solver</h3>
+    <p>
+      CUDA-accelerated D2Q9-BGK Lattice Boltzmann Method solver for lid-driven cavity flow,
+      with Ghia benchmark comparison and CPU/GPU performance analysis.
+    </p>
+    <p><a href="https://github.com/MechShahid/cuda-lbm-lid-driven-cavity">View on GitHub</a></p>
+  </div>
+
+  <div class="project">
+    <h3>CUDA LBM Couette Flow Benchmark</h3>
+    <p>
+      CUDA and serial CPU implementation of D2Q9-BGK LBM for Couette flow, including
+      moving-wall boundary treatment, analytical validation, and speedup comparison.
+    </p>
+    <p><a href="https://github.com/MechShahid/cuda-lbm-couette-benchmark">View on GitHub</a></p>
+  </div>
+
+  <div class="project">
+    <h3>Finite-Volume and CFD Solver Portfolio</h3>
+    <p>
+      Educational CFD and numerical-method projects including shock-tube flow,
+      convection-diffusion, ADI heat conduction, nozzle flow, incompressible channel flow,
+      and lid-driven cavity flow.
+    </p>
+    <p><a href="https://github.com/MechShahid">View GitHub Portfolio</a></p>
+  </div>
+
+  <h2>Contact</h2>
+  <p>
+    Email: <a href="mailto:mechshahid@gmail.com">mechshahid@gmail.com</a><br>
+    LinkedIn: <a href="https://www.linkedin.com/in/mohammad-shahid-5ab944141">linkedin.com/in/mohammad-shahid-5ab944141</a><br>
+    GitHub: <a href="https://github.com/MechShahid">github.com/MechShahid</a>
+  </p>
+
+</div>
+
+<footer>
+  <p>© 2026 Mohammad Shahid</p>
+</footer>
+
+</body>
+</html>

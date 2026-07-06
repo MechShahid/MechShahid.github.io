@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <title>Mohammad Shahid | Computational Modelling Engineer</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -17,7 +18,7 @@
       background: #102033;
       color: white;
       text-align: center;
-      padding: 50px 20px;
+      padding: 52px 20px;
     }
 
     header h1 {
@@ -25,9 +26,15 @@
       font-size: 38px;
     }
 
+    header .subtitle {
+      font-size: 21px;
+      margin: 10px 0 6px 0;
+      font-weight: 600;
+    }
+
     header p {
-      font-size: 18px;
-      margin: 10px 0;
+      font-size: 17px;
+      margin: 8px 0;
     }
 
     .button {
@@ -38,10 +45,15 @@
       color: white;
       text-decoration: none;
       border-radius: 5px;
+      font-weight: 600;
+    }
+
+    .button:hover {
+      background: #17486f;
     }
 
     .container {
-      max-width: 1000px;
+      max-width: 1050px;
       margin: 0 auto;
       background: white;
       padding: 30px 25px;
@@ -67,6 +79,16 @@
       color: #1f5f99;
     }
 
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 15px;
+    }
+
+    ul {
+      margin-top: 8px;
+    }
+
     footer {
       background: #102033;
       color: white;
@@ -84,8 +106,8 @@
 
 <header>
   <h1>Mohammad Shahid</h1>
-  <p>Computational Modelling Engineer</p>
-  <p>Heat Transfer & CFD | Compact / Reduced-Order Thermal Models | Numerical Software | Solver V&V</p>
+  <p class="subtitle">Computational Modelling Engineer</p>
+  <p>Physics-Based Simulation | Multiphysics Modelling | Model Validation | R&amp;D Decision Support</p>
   <p>Den Haag, Netherlands</p>
 
   <a class="button" href="PDFs/Mohammad_Shahid_CV.pdf">Download CV</a>
@@ -98,167 +120,205 @@
 
   <h2>About</h2>
   <p>
-    I am a computational modelling engineer with experience in heat transfer,
-    CFD, thermo-fluid simulation, multiphysics modelling, compact thermal models,
-    and solver verification and validation. My work combines first-principles
-    analysis, high-fidelity simulation comparison, reduced-order modelling,
-    and scientific programming to support engineering design decisions.
+    I am a computational modelling engineer focused on physics-based simulation,
+    multiphysics modelling, validation, and R&amp;D decision support. My work combines
+    first-principles analysis, reduced-order modelling, high-fidelity simulation
+    comparison, and scientific programming to make complex physical behaviour
+    understandable and useful for engineering decisions.
   </p>
+
+  <p>
+    My experience spans thermo-fluid, electro-thermal, thermo-mechanical,
+    electromagnetic, and numerical solver validation problems. I am especially
+    interested in applying computational modelling and virtual prototyping to
+    complex product-development environments, including healthcare technology
+    and medical-device R&amp;D.
+  </p>
+
+  <h2>Model Credibility &amp; Validation</h2>
+  <p>
+    My modelling approach starts with the engineering question and the dominant
+    physical mechanisms. I use simplified models where they are useful, compare
+    them against high-fidelity simulations or benchmark references where possible,
+    and define the limits of applicability before drawing conclusions.
+  </p>
+
+  <ul>
+    <li>First-principles checks and analytical sanity checks</li>
+    <li>Benchmark comparison and reference-case validation</li>
+    <li>Mesh and time-step sensitivity studies</li>
+    <li>High-fidelity simulation cross-checking</li>
+    <li>Sensitivity analysis and performance-limit assessment</li>
+    <li>Clear documentation of modelling assumptions and limitations</li>
+  </ul>
 
   <h2>Featured Engineering Portfolio</h2>
 
   <div class="project">
-    <h3>Rapid Thermal Screening of 5G/6G Active Antenna Units</h3>
+    <h3>Coupled Multiphysics Workflow for Thermally Loaded Hardware</h3>
     <p>
-      Developed a compact thermal resistance-network framework for front- and
-      rear-side natural heat dissipation in active antenna units. The model used
-      conduction, radiation, and natural-convection correlations and was validated
-      against 3D CST simulations.
+      Developed sequential simulation workflows linking electromagnetic loss,
+      temperature rise, thermo-mechanical deformation, and response change in
+      thermally loaded high-frequency hardware. The work focused on understanding
+      how coupled physical effects propagate across domains and how model results
+      can inform design sensitivity and performance-risk assessment.
     </p>
   </div>
 
   <div class="project">
-    <h3>Forced-Convection Cooling Concept for Active Antenna Units</h3>
+    <h3>Compact Thermal Screening for Integrated Hardware Systems</h3>
     <p>
-      Built an analytical design framework for a front-side air-to-air heat-exchanger
-      concept using fin count, channel dimensions, airflow rate, outlet temperature,
-      and heat-rejection estimates.
+      Developed first-principles thermal screening models using conduction,
+      radiation, and natural convection to estimate heat-rejection limits in
+      integrated high-power hardware. Simplified predictions were compared with
+      detailed 3D simulations to define model applicability limits and support
+      early-stage design decisions.
     </p>
   </div>
 
   <div class="project">
-    <h3>Reduced-Order Thermal Modelling for RF Via Structures</h3>
+    <h3>Solver Verification and Validation for Plasma-Flow Modelling</h3>
     <p>
-      Developed analytical reduced-order thermal models for localized electro-thermal
-      heating in RF via structures and validated them against COMSOL finite-element
-      simulations.
+      Verified and validated an in-house plasma-flow solver using benchmark cases,
+      geometry and boundary-condition checks, mesh refinement, convergence studies,
+      and comparison against analytical, numerical, and experimental references.
+      Cases included Poiseuille flow, de Laval nozzle flow, laminar round jet, and
+      free-burning argon arc simulations.
     </p>
   </div>
 
   <div class="project">
-    <h3>Sequential Electro-Thermal-Mechanical CST Workflow</h3>
+    <h3>Industrial Concept Screening with Reduced-Order Thermal Modelling</h3>
     <p>
-      Built and verified a CST workflow linking electromagnetic loss, thermal analysis,
-      structural deformation, and RF sensitivity for thermally loaded RF hardware.
+      Developed a compact MATLAB thermal-resistance model for rapid cooling-concept
+      screening using geometry, heat-load definitions, material assumptions, and
+      design constraints. The model was benchmarked against higher-fidelity simulations
+      to identify when simplified modelling was sufficient and when detailed simulation
+      was required.
     </p>
   </div>
 
   <div class="project">
-    <h3>Verification and Validation of In-House Plasma-Flow Solver</h3>
+    <h3>Unsteady Thermo-Fluid Simulation Around an Oscillating Heated Cylinder</h3>
     <p>
-      Verified and validated the YAPS plasma-flow solver using benchmark cases including
-      Poiseuille flow, de Laval nozzle flow, laminar jets, and free-burning arc simulations.
+      Adapted an in-house finite-difference Fortran solver for unsteady thermo-fluid
+      simulations around a torsionally oscillating heated cylinder with prescribed
+      boundary motion. The work included grid-independence checks, time-step sensitivity
+      studies, wake-dynamics analysis, force response, and heat-transfer trends.
     </p>
   </div>
 
-  <div class="project">
-    <h3>Unsteady Mixed-Convection CFD Around Oscillating Heated Cylinder</h3>
-    <p>
-      Adapted an in-house finite-difference Fortran solver for unsteady mixed-convection
-      heat-transfer simulations around a torsionally oscillating heated circular cylinder.
-    </p>
+  <h2>Numerical Software &amp; GitHub Projects</h2>
+
+  <p>
+    I maintain a documented scientific-computing portfolio covering CFD, heat transfer,
+    finite-volume methods, finite-difference methods, lattice Boltzmann methods, CUDA
+    acceleration, and reproducible post-processing workflows.
+  </p>
+
+  <div class="grid">
+
+    <div class="project">
+      <h3>CUDA LBM Lid-Driven Cavity Solver</h3>
+      <p>
+        CUDA-accelerated D2Q9-BGK Lattice Boltzmann solver for lid-driven cavity flow,
+        with Ghia benchmark comparison and CPU/GPU performance analysis.
+      </p>
+      <p><a href="https://github.com/MechShahid/cuda-lbm-lid-driven-cavity">View on GitHub</a></p>
+    </div>
+
+    <div class="project">
+      <h3>CUDA LBM Couette Flow Benchmark</h3>
+      <p>
+        CUDA and serial CPU implementation of D2Q9-BGK LBM for Couette flow, including
+        moving-wall boundary treatment, analytical validation, and speedup comparison.
+      </p>
+      <p><a href="https://github.com/MechShahid/cuda-lbm-couette-benchmark">View on GitHub</a></p>
+    </div>
+
+    <div class="project">
+      <h3>LBM Lid-Driven Cavity Solver in C++</h3>
+      <p>
+        D2Q9-BGK Lattice Boltzmann solver for lid-driven cavity flow with benchmark-style
+        centreline velocity comparison and Python post-processing.
+      </p>
+      <p><a href="https://github.com/MechShahid/lbm-lid-driven-cavity-cpp">View on GitHub</a></p>
+    </div>
+
+    <div class="project">
+      <h3>LBM Couette Flow Solver in C++</h3>
+      <p>
+        C++ LBM implementation for Couette flow, including wall boundary treatment,
+        velocity-profile extraction, and analytical comparison.
+      </p>
+      <p><a href="https://github.com/MechShahid/lbm-couette-flow-cpp">View on GitHub</a></p>
+    </div>
+
+    <div class="project">
+      <h3>Finite-Volume Shock Tube Solver in Fortran</h3>
+      <p>
+        One-dimensional compressible-flow solver for the Sod shock-tube problem using
+        finite-volume methods, Rusanov/Godunov fluxes, MUSCL reconstruction, and
+        exact-solution comparison.
+      </p>
+      <p><a href="https://github.com/MechShahid/finite-volume-shock-tube-fortran">View on GitHub</a></p>
+    </div>
+
+    <div class="project">
+      <h3>Finite-Volume Convection-Diffusion Solver in Fortran</h3>
+      <p>
+        Steady one-dimensional convection-diffusion solver comparing numerical schemes
+        against analytical behaviour for transport-dominated problems.
+      </p>
+      <p><a href="https://github.com/MechShahid/finite-volume-convection-diffusion-fortran">View on GitHub</a></p>
+    </div>
+
+    <div class="project">
+      <h3>ADI Heat Conduction Solver in Fortran</h3>
+      <p>
+        Two-dimensional transient heat-conduction solver using an Alternating Direction
+        Implicit method, with contour visualisation and verification-style test cases.
+      </p>
+      <p><a href="https://github.com/MechShahid/heat-conduction-adi-fdm-fortran">View on GitHub</a></p>
+    </div>
+
+    <div class="project">
+      <h3>Incompressible Channel Flow Solver in Fortran</h3>
+      <p>
+        Incompressible Poiseuille/channel-flow solver using an iterative pressure-velocity
+        solution strategy and comparison with analytical velocity profiles.
+      </p>
+      <p><a href="https://github.com/MechShahid/incompressible-channel-flow-fortran">View on GitHub</a></p>
+    </div>
+
+    <div class="project">
+      <h3>Lid-Driven Cavity Solver in Fortran</h3>
+      <p>
+        Two-dimensional incompressible lid-driven cavity solver with streamfunction,
+        vorticity, velocity-field, and benchmark-style post-processing.
+      </p>
+      <p><a href="https://github.com/MechShahid/lid-driven-cavity-fortran">View on GitHub</a></p>
+    </div>
+
+    <div class="project">
+      <h3>Quasi-1D Nozzle Flow Solver in Fortran</h3>
+      <p>
+        Compressible quasi-one-dimensional nozzle-flow solver including area variation,
+        pressure/density/velocity distributions, and shock-related case studies.
+      </p>
+      <p><a href="https://github.com/MechShahid/quasi-1d-nozzle-flow-fortran">View on GitHub</a></p>
+    </div>
+
+    <div class="project">
+      <h3>Full GitHub Solver Portfolio</h3>
+      <p>
+        Collection of CFD, heat-transfer, LBM, finite-volume, finite-difference, and CUDA
+        numerical-method projects with reports, plots, and reproducible code examples.
+      </p>
+      <p><a href="https://github.com/MechShahid">View GitHub Portfolio</a></p>
+    </div>
+
   </div>
-
-<h2>Numerical Software & GitHub Projects</h2>
-
-<div class="project">
-  <h3>CUDA LBM Lid-Driven Cavity Solver</h3>
-  <p>
-    CUDA-accelerated D2Q9-BGK Lattice Boltzmann Method solver for lid-driven cavity flow,
-    with Ghia benchmark comparison and CPU/GPU performance analysis.
-  </p>
-  <p><a href="https://github.com/MechShahid/cuda-lbm-lid-driven-cavity">View on GitHub</a></p>
-</div>
-
-<div class="project">
-  <h3>CUDA LBM Couette Flow Benchmark</h3>
-  <p>
-    CUDA and serial CPU implementation of D2Q9-BGK LBM for Couette flow, including
-    moving-wall boundary treatment, analytical validation, and speedup comparison.
-  </p>
-  <p><a href="https://github.com/MechShahid/cuda-lbm-couette-benchmark">View on GitHub</a></p>
-</div>
-
-<div class="project">
-  <h3>LBM Lid-Driven Cavity Solver in C++</h3>
-  <p>
-    D2Q9-BGK Lattice Boltzmann solver for lid-driven cavity flow with benchmark-style
-    centreline velocity comparison and Python post-processing.
-  </p>
-  <p><a href="https://github.com/MechShahid/lbm-lid-driven-cavity-cpp">View on GitHub</a></p>
-</div>
-
-<div class="project">
-  <h3>LBM Couette Flow Solver in C++</h3>
-  <p>
-    C++ LBM implementation for Couette flow, including wall boundary treatment,
-    velocity-profile extraction, and analytical comparison.
-  </p>
-  <p><a href="https://github.com/MechShahid/lbm-couette-flow-cpp">View on GitHub</a></p>
-</div>
-
-<div class="project">
-  <h3>Finite-Volume Shock Tube Solver in Fortran</h3>
-  <p>
-    One-dimensional compressible-flow solver for the Sod shock-tube problem using
-    finite-volume methods, Rusanov/Godunov fluxes, MUSCL reconstruction, and exact-solution comparison.
-  </p>
-  <p><a href="https://github.com/MechShahid/finite-volume-shock-tube-fortran">View on GitHub</a></p>
-</div>
-
-<div class="project">
-  <h3>Finite-Volume Convection-Diffusion Solver in Fortran</h3>
-  <p>
-    Steady one-dimensional convection-diffusion solver comparing numerical schemes
-    against analytical behaviour for transport-dominated problems.
-  </p>
-  <p><a href="https://github.com/MechShahid/finite-volume-convection-diffusion-fortran">View on GitHub</a></p>
-</div>
-
-<div class="project">
-  <h3>ADI Heat Conduction Solver in Fortran</h3>
-  <p>
-    Two-dimensional transient heat-conduction solver using an Alternating Direction
-    Implicit method, with contour visualisation and verification-style test cases.
-  </p>
-  <p><a href="https://github.com/MechShahid/heat-conduction-adi-fdm-fortran">View on GitHub</a></p>
-</div>
-
-<div class="project">
-  <h3>Incompressible Channel Flow Solver in Fortran</h3>
-  <p>
-    Incompressible Poiseuille/channel-flow solver using iterative pressure-velocity
-    solution strategy and comparison with analytical velocity profiles.
-  </p>
-  <p><a href="https://github.com/MechShahid/incompressible-channel-flow-fortran">View on GitHub</a></p>
-</div>
-
-<div class="project">
-  <h3>Lid-Driven Cavity Solver in Fortran</h3>
-  <p>
-    Two-dimensional incompressible lid-driven cavity solver with streamfunction,
-    vorticity, velocity-field, and benchmark-style post-processing.
-  </p>
-  <p><a href="https://github.com/MechShahid/lid-driven-cavity-fortran">View on GitHub</a></p>
-</div>
-
-<div class="project">
-  <h3>Quasi-1D Nozzle Flow Solver in Fortran</h3>
-  <p>
-    Compressible quasi-one-dimensional nozzle-flow solver including area variation,
-    pressure/density/velocity distributions, and shock-related case studies.
-  </p>
-  <p><a href="https://github.com/MechShahid/quasi-1d-nozzle-flow-fortran">View on GitHub</a></p>
-</div>
-
-<div class="project">
-  <h3>Full GitHub Solver Portfolio</h3>
-  <p>
-    Collection of CFD, heat-transfer, LBM, finite-volume, and CUDA numerical-method projects
-    with reports, plots, and reproducible code examples.
-  </p>
-  <p><a href="https://github.com/MechShahid">View GitHub Portfolio</a></p>
-</div>
 
   <h2>Contact</h2>
   <p>

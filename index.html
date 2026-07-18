@@ -156,6 +156,7 @@
 
   <div class="project">
     <h3>Mechanical and Thermal Design Workflow for a 250 W PCIe AI Accelerator Card</h3>
+
     <p>
       Developed a simplified mechanical and thermal design workflow for a high-power PCIe-style
       AI accelerator card. The project combines first-principles thermal resistance sizing,
@@ -164,21 +165,27 @@
     </p>
 
     <p>
-      Analytical screening showed that the compact baseline heatsink was not sufficient for the
-      250 W chip load. A larger 80 mm × 100 mm × 50 mm forced-air heatsink was selected for the
-      CFD stage after evaluating passive cooling, compact forced-air cooling, and spreading
-      improvements using copper/vapor-chamber assumptions.
+      The workflow progressed from analytical screening to CFD design iteration. A reduced-height
+      80 mm × 100 mm × 35 mm heatsink initially failed in an open/bypass domain because a significant
+      portion of the airflow bypassed the fin region. Ducting improved the thermal performance, and
+      extending the ducted heatsink length to 120 mm produced a passing first-pass design.
     </p>
 
-    <p>
-      The first-pass CFD model predicted a maximum chip temperature of approximately 76 °C,
-      below the 85 °C target, with a pressure drop of 28.8 Pa and an air-side heat-balance
-      error below 1% under the assumed 5 m/s guided airflow condition.
-    </p>
+    <ul>
+      <li>Chip heat load: 250 W</li>
+      <li>Target maximum chip temperature: 85 °C</li>
+      <li>CFD-0 reference case: 80 mm × 100 mm × 50 mm heatsink, 75.97 °C maximum chip temperature</li>
+      <li>CFD-1 reduced-height open/bypass case: 91.47 °C, failed target</li>
+      <li>CFD-2 ducted 80 mm × 100 mm × 35 mm case: 87.78 °C, slight fail</li>
+      <li>Final CFD-3 candidate: 80 mm × 120 mm × 35 mm ducted aluminium heatsink</li>
+      <li>Final maximum chip temperature: 83.52 °C</li>
+      <li>Final pressure drop: approximately 49 Pa</li>
+      <li>Tools: Python, NumPy, Pandas, Matplotlib, ANSYS SpaceClaim, ANSYS Meshing, ANSYS Fluent</li>
+    </ul>
 
     <p>
-      <strong>Tools:</strong> Python, NumPy, Pandas, Matplotlib, ANSYS Fluent, thermal resistance
-      modelling, conjugate heat transfer, heatsink design, verification and validation.
+      This is a first-pass thermal feasibility and portfolio-level engineering demonstrator, not a
+      final mesh-independent or experimentally validated product design.
     </p>
 
     <p>

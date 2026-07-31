@@ -155,46 +155,53 @@
   <h2>Featured Engineering Portfolio</h2>
 
   <div class="project">
-    <h3>Mechanical and Thermal Design Workflow for a 250 W PCIe AI Accelerator Card</h3>
+  <h3>Mechanical and Thermal Design Workflow for a 250 W PCIe AI Accelerator Card</h3>
 
-    <p>
-      Developed a simplified mechanical and thermal design workflow for a high-power PCIe-style
-      AI accelerator card. The project combines first-principles thermal resistance sizing,
-      TIM and airflow sensitivity studies, passive and vapor-chamber tradeoff analysis,
-      forced-air heatsink screening, and first-pass ANSYS Fluent conjugate heat-transfer CFD.
-    </p>
+  <p>
+    Developed a simplified mechanical and thermal design workflow for a high-power PCIe-style
+    AI accelerator card. The project combines first-principles thermal resistance sizing,
+    TIM and airflow sensitivity studies, passive and vapor-chamber tradeoff analysis,
+    forced-air heatsink screening, ANSYS Fluent conjugate heat-transfer CFD, mesh-sensitivity
+    checking, turbulence-model sensitivity checking, concept-level mechanical support screening,
+    and liquid/immersion cooling screening.
+  </p>
 
-    <p>
-      The workflow progressed from analytical screening to CFD design iteration. A reduced-height
-      80 mm × 100 mm × 35 mm heatsink initially failed in an open/bypass domain because a significant
-      portion of the airflow bypassed the fin region. Ducting improved the thermal performance, and
-      extending the ducted heatsink length to 120 mm produced a passing first-pass design.
-    </p>
+  <p>
+    The workflow progressed from analytical screening to CFD design iteration. A reduced-height
+    80 mm × 100 mm × 35 mm heatsink initially failed in an open/bypass domain because a significant
+    portion of the airflow bypassed the fin region. Ducting improved the thermal performance, and
+    extending the ducted heatsink length to 120 mm produced a passing first-pass design.
+  </p>
 
-    <ul>
-      <li>Chip heat load: 250 W</li>
-      <li>Target maximum chip temperature: 85 °C</li>
-      <li>CFD-0 reference case: 80 mm × 100 mm × 50 mm heatsink, 75.97 °C maximum chip temperature</li>
-      <li>CFD-1 reduced-height open/bypass case: 91.47 °C, failed target</li>
-      <li>CFD-2 ducted 80 mm × 100 mm × 35 mm case: 87.78 °C, slight fail</li>
-      <li>Final CFD-3 candidate: 80 mm × 120 mm × 35 mm ducted aluminium heatsink</li>
-      <li>Final maximum chip temperature: 83.52 °C</li>
-      <li>Final pressure drop: approximately 49 Pa</li>
-      <li>Tools: Python, NumPy, Pandas, Matplotlib, ANSYS SpaceClaim, ANSYS Meshing, ANSYS Fluent</li>
-    </ul>
+  <ul>
+    <li>Chip heat load: 250 W</li>
+    <li>Target maximum chip temperature: 85 °C</li>
+    <li>CFD-0 reference case: 80 mm × 100 mm × 50 mm heatsink, 75.97 °C maximum chip temperature</li>
+    <li>CFD-1 reduced-height open/bypass case: 91.47 °C, failed target</li>
+    <li>CFD-2 ducted 80 mm × 100 mm × 35 mm case: 87.78 °C, slight fail</li>
+    <li>CFD-3 ducted 80 mm × 120 mm × 35 mm case: 83.52 °C, passed target</li>
+    <li>CFD-4A refined-mesh repeat: 78.11 °C maximum chip temperature, 56.36 Pa pressure drop</li>
+    <li>CFD-4B k-omega SST sensitivity: 68.50 °C maximum chip temperature, 83.84 Pa pressure drop</li>
+    <li>Mechanical support screening: final heatsink mass approximately 424 g, high support-risk category</li>
+    <li>Liquid/immersion screening: compared air, water-like coolant, dielectric liquid, cold plate, and immersion concepts</li>
+    <li>Tools: Python, NumPy, Pandas, Matplotlib, ANSYS SpaceClaim, ANSYS Meshing, ANSYS Fluent</li>
+  </ul>
 
-    <p>
-      This is a first-pass thermal feasibility and portfolio-level engineering demonstrator, not a
-      final mesh-independent or experimentally validated product design.
-    </p>
+  <p>
+    Although refined-mesh and k-omega SST sensitivity checks were added, this remains a
+    portfolio-level engineering demonstrator rather than a validated product design. Further
+    mesh-convergence refinement, transition-model assessment, detailed PCB layout checks,
+    mechanical support design, PCB structural FEA, shock/vibration assessment, liquid-cooling
+    pressure-drop modelling, immersion-system CFD, and experimental correlation would be required
+    before product-level validation.
+  </p>
 
-    <p>
-      <a href="https://github.com/MechShahid/pcie-ai-accelerator-thermal-design" target="_blank">
-        View GitHub project
-      </a>
-    </p>
-  </div>
-
+  <p>
+    <a href="https://github.com/MechShahid/pcie-ai-accelerator-thermal-design" target="_blank">
+      View GitHub project
+    </a>
+  </p>
+</div>
   <div class="project">
     <h3>Coupled Multiphysics Workflow for Thermally Loaded Hardware</h3>
     <p>
